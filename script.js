@@ -1,12 +1,18 @@
-async function getQuote() {
-  const res = await fetch('https://api.quotable.io/random');
-  const data = await res.json();
-  document.getElementById('quote').textContent = data.content + ' — ' + data.author;
+const quotes = [
+  "“Stay hungry, stay foolish.” – Steve Jobs",
+  "“Code is like humor. When you have to explain it, it’s bad.” – Cory House",
+  "“Simplicity is the soul of efficiency.” – Austin Freeman",
+  "“The best error message is the one that never shows up.” – Thomas Fuchs"
+];
+
+function getRandomQuote() {
+  const random = Math.floor(Math.random() * quotes.length);
+  document.getElementById("quote").textContent = quotes[random];
 }
 
-function showEgg() {
-  alert(\"👀 You've found the secret, Zia! Here's a fact: You are 93% more awesome than you admit.\");
-}
-
-// Load a quote on page load
-window.onload = getQuote;
+// Easter egg: press 'Z' to trigger a secret
+document.addEventListener("keydown", function(e) {
+  if (e.key.toLowerCase() === 'z') {
+    alert("👑 Zia the Great detected! Welcome back, legend.");
+  }
+});
