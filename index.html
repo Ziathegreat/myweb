@@ -1,108 +1,26 @@
-Sur<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zia the Great</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Zia the Great</h1>
-      <p>Creative. Curious. Coded.</p>
-    </header><section class="quote-section">
-  <h2>Random Quote Generator</h2>
-  <blockquote id="quote">Loading quote...</blockquote>
-  <button onclick="getQuote()">Get New Quote</button>
-</section>
-
-<section class="projects">
-  <h2>Current Projects</h2>
-  <ul>
-    <li>⚡ Developing a heavy CSS-based site</li>
-    <li>💡 Learning APIs & backend logic</li>
-    <li>🕹️ Game emulation and system optimization</li>
-  </ul>
-</section>
-
-<footer>
-  <p>&copy; 2025 Zia the Great | <span id="easter-egg" onclick="showEgg()">🐣</span></p>
-</footer>
-
-  </div>
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zia</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-      color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 90vh;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin: 0.5em 0;
-    }
-
-    p {
-      font-size: 1.5em;
-      max-width: 580px;
-    }
-
-    a {
-      color: #1abc9c;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 2em;
-      border-radius: 15px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(5px);
-    }
-
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-  </style>
+  <title>Zia's Realm</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>Welcome to Zia's Web</h1>
-    <p>Hello there! I'm Zia, a curious mind exploring the stuff and curious about world. This is my little corner on the web — more to come soon.</p>
-    <p>Stay connected: <a href="https://github.com/ziathegreat" target="_blank">GitHub Profile</a></p>
-    <h2>Knowledge let just say it's my initial views</h2>
-    <p>You can't be certain of anything. This is due to the inherent nature of premises (axioms). Everything, at the end of the day, is just beliefs that we hold. This statement itself is a belief, highlighting the limitations of absolute certainty within a system based on beliefs. It can't hold meaning when subjected to itself, becoming self-defeating in the sense that it's just another belief. It's like going to infinity by counting – it never proves everything. By accepting this, we see it not as a constructive argument, but one that tries to exploit the game of logic..</p>
+  <header>
+    <h1>Welcome to Zia's World</h1>
+    <p>Code, quotes & cleverness all in one place.</p>
+  </header>
 
-    <a href="https://ziathegreat.github.io">Start</a>
+  <div class="container">
+    <h2>Quote of the Moment</h2>
+    <p id="quote">Click the button to inspire yourself...</p>
+    <button onclick="getRandomQuote()">Get Quote</button>
   </div>
+
   <footer>
-    &copy; 2025 Zia the Great. All rights reserved.
+    <p>&copy; 2025 ZiaTheGreat — powered by caffeine ☕</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
