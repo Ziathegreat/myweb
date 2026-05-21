@@ -12,10 +12,15 @@ function getRandomQuote() {
   const random = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").textContent = quotes[random];
 }
-
-// Easter egg: press 'Z' to trigger a secret
+// Updated listener to handle both administrative mode and Ann mode
 document.addEventListener("keydown", function(e) {
-  if (e.key.toLowerCase() === 'z') {
-    alert("👑 Zia the Great detected! Welcome back, legend.");
-  }
-});
+  const key = e.key.toLowerCase();
+    
+      if (key === 'z') {
+          alert("👑 Zia the Great detected! Welcome back, legend.");
+            }
+              
+                if (key === 'a') {
+                    document.body.classList.toggle('ann-mode');
+                      }
+                      });
